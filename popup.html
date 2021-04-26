@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .btn {
+                border: none;
+                outline: none;
+                cursor: pointer;
+                color: white;
+                background-color: rgb(36, 94, 243);
+                transition: background-color 0.2s ease;
+                padding: 0.2rem 3rem;
+                border-radius: 4px;
+                box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4), -2px -2px 8px 0px rgba(255, 255, 255, 0.624);
+            }
+            .btn:hover {
+                background-color: blue;
+                box-shadow: inset 2px 2px 8px 0px rgba(255, 255, 255, 0.624), inset -2px -2px 8px 0px rgba(0, 0, 0, 0.4);
+            }
+            .container {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: auto;
+                gap: 0.3rem;
+            }
+            #currentSpeed {
+                border: 1px solid black;
+                padding: 0.25rem 0;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+            }
+
+            #currentSpeed span {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button class="btn" id="1">1x</button>
+            <button class="btn" id="1.25">1.25x</button>
+            <button class="btn" id="1.5">1.5x</button>
+            <button class="btn" id="1.75">1.75x</button>
+            <button class="btn" id="2">2x</button>
+            <button class="btn" id="3">3x</button>
+            <button class="btn" id="4">4x</button>
+            <button class="btn" id="5">5x</button>
+            <button class="btn" id="6">6x</button>
+            <button class="btn" id="7">7x</button>
+            <button class="btn" id="8">8x</button>
+            <button class="btn" id="9">9x</button>
+            <button class="btn" id="10">10x</button>
+            <button class="btn" id="11">11x</button>
+            <button class="btn" id="12">12x</button>
+            <button class="btn" id="13">13x</button>
+            <button class="btn" id="14">14x</button>
+            <button class="btn" id="15">15x</button>
+            <button class="btn" id="16">16x</button>
+            <h4 id="currentSpeed">
+                Current Speed:
+                <span>1x</span>
+            </h4>
+            <input type="range" id="speed" name="pspeed" min="0" max="16" value="1" step="0.25" />
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
